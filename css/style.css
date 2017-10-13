@@ -1,0 +1,167 @@
+body{
+    min-height: 150vh;
+}
+.top-navbar{
+    font-size: 20px;
+    padding: 5px 0 0 10px;
+    border: 2px #808080 solid;
+    color: #4d4d4d;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: #FFFFFF;
+}
+.left-nav{
+    height: 90vh;
+    background-color: #134F5C;
+    padding: 8px 15px 8px 15px;
+    border-radius: 2px;
+}
+.left-nav , .primary-content{
+    margin-top: 7vh;
+}
+
+.edit-company{
+    color: white;
+    font-size: 20px;
+}
+.edit-button{
+    color: #333333;
+    background-color: #FFFFFF;
+    padding: 0px;
+    width: 17px;
+    height: 17px;
+    font-size: 13px;
+}
+
+.last-analys{
+    color: #FFFFFF;
+    float:right;
+    font-size: 12px;
+}
+.last-analys span:nth-child(2){
+    display: block;
+    text-align: right;
+}
+.company-name{
+    color: white;
+    padding: 10px 0 0 0;
+}
+.company-descr{
+    color: white;
+}
+.title{
+    font-size: 13px;
+}
+.group-name{
+    margin: 0px;
+}
+.website{
+    margin-top: 20px;
+}
+.website a{
+    color: white;
+}
+.company-img{
+    width: 100%;
+    min-height: 20vh;
+}
+
+.file-count{
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    background-color: #2877E3;
+    margin: 0px;
+    border-radius: 5px;
+}
+.badge-notify{
+    background: #2877E3;
+    position: relative;
+    left: -11px;
+    top: -18px;
+    font-size: 9px;
+}
+.analysis-buttons{
+    position: absolute;
+    bottom: 0;
+    padding:0 15px 0 0;
+    width: 90%;
+}
+.analyse-btn{
+    font-size: 10px;
+    padding: 5px 3px 5px 3px;
+    width: 65%;
+    float: right;
+}
+.collapse-holder{
+    background-color: white;
+    margin: 20px 0 20px 0;
+    border-radius: 2px;
+    color: black;
+    max-height: 50vh;
+    overflow: auto;
+}
+.collapse-bar{
+    padding: 12px 0 12px 30px;
+    cursor: pointer;
+}
+.collapse-arrow{
+    font-size: 20px;
+    vertical-align: middle;
+}
+.collapse-title{
+    font-size: 18px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.search{
+    margin-left: 10px;
+    padding: 2px 5px 2px 5px;
+    width: 10%;
+}
+
+.search-clear{
+    margin-left: 10px;
+    padding: 2px 5px 2px 5px;
+    width: 10%;
+}
+.collapse-bar.open{
+    background-color: #E6E6E6;
+}
+.collapse-links{
+    list-style:none;
+    font-size: 15px;
+    line-height: 3;
+    margin-left: 30px;
+}
+.collapse li{
+    cursor: pointer;
+}
+.search-header{
+    color: #999999;
+    margin: 80px 0 0 10px;
+}
+.search-filter{
+    background-color: #45818E;
+    padding: 30px 20px 30px 20px;
+}
+.search-inputs{
+    margin-right: 20px;
+    padding: 3px;
+    line-height: 2
+}
+.search-hyperlinks{
+    padding: 0px;
+    margin: 20px 0 0 0;
+}
+.search-hyperlinks li{
+    display: inline;
+}
+.search-hyperlinks li a{
+    color: #999999;
+}
+.search-hyperlinks li:not(:last-child)::after{
+    content: " - ";
+}
