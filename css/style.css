@@ -17,10 +17,9 @@ body{
     padding: 8px 15px 8px 15px;
     border-radius: 2px;
 }
-.left-nav , .primary-content{
+.left-nav , .scroll-content{
     margin-top: 7vh;
 }
-
 .edit-company{
     color: white;
     font-size: 20px;
@@ -33,7 +32,6 @@ body{
     height: 17px;
     font-size: 13px;
 }
-
 .last-analys{
     color: #FFFFFF;
     float:right;
@@ -53,11 +51,20 @@ body{
 .title{
     font-size: 13px;
 }
-.group-name{
+.group-name h4{
     margin: 0px;
 }
 .website{
-    margin-top: 20px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-left: 15px;
+    width: 100%;
 }
 .website a{
     color: white;
@@ -66,7 +73,6 @@ body{
     width: 100%;
     min-height: 20vh;
 }
-
 .file-count{
     font-size: 15px;
     padding: 5px;
@@ -115,17 +121,19 @@ body{
     margin-left: 10px;
     vertical-align: middle;
 }
-
 .search{
     margin-left: 10px;
     padding: 2px 5px 2px 5px;
     width: 10%;
 }
-
 .search-clear{
     margin-left: 10px;
     padding: 2px 5px 2px 5px;
-    width: 10%;
+    width: 11%;
+    background-color: transparent;
+    border-color: #999999;
+    color: #999999;
+    font-weight: 600;
 }
 .collapse-bar.open{
     background-color: #E6E6E6;
@@ -146,6 +154,7 @@ body{
 .search-filter{
     background-color: #45818E;
     padding: 30px 20px 30px 20px;
+    border: 2px solid;
 }
 .search-inputs{
     margin-right: 20px;
@@ -179,25 +188,53 @@ body{
     font-size: 30px;
     color: #9FC5F8;
 }
-.mail-phone{
-}
 .info{
     font-size: 10px;
     display: inline-block;
 }
 .contact-btns{
+    float: right;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.40s ease-in-out;
+    -moz-transition: opacity 0.40s ease-in-out;
+    -webkit-transition: opacity 0.40s ease-in-out;
+}
+.mail-button,.phone-button{
     font-size: 11px;
     padding: 0px;
     margin: 5px 0 0 0;
-    float: right;
     display: inline-block;
-}
-.contact-btns i{
     border: 1px solid;
     border-radius: 50%;
-    padding: 5px;
+    width: 23px;
+    height: 23px;
+    line-height: 1;
+}
+.mail-button{
+    color:#2A78E4;
+}
+.phone-button{
+    color: #4BA112;
+}
+.mail-button:hover{
+background-color: #2A78E4;
+color: white;
+}
+.phone-button:hover{
+    color: white;
+    background-color: #4BA112;
 }
 .vcard-name{
     font-weight: 600;
     font-size: 12px;
+}
+.vcard-designation{
+    color: #999999;
+}
+.contact-card:hover .contact-btns{
+    opacity: 1.0;
+    transition: opacity .40s ease-in-out;
+    -moz-transition: opacity .40s ease-in-out;
+    -webkit-transition: opacity .40s ease-in-out;
 }

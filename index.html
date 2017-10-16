@@ -21,7 +21,6 @@
 
         <div class="container-fluid">
                 <div class="row">
-
                         <div class="col-xs-3 affix">
                                 <div class="left-nav">
                                         <div class="edit">
@@ -38,13 +37,15 @@
                                         
                                         <div class="row row-eq-height">
                                                 <div class="col-xs-5">
-                                                        <img class="company-img" src="images/company-logo.jpg" alt="Company Logo">  
+                                                        <img class="company-img" src="images/company-logo.jpg" alt="Company-Logo">  
                                                 </div>
                                                 <div class="col-xs-7">
                                                         <div class="company-descr">
                                                                 <div class="group">
                                                                         <span class="title">Group Name:</span>
-                                                                        <h4 class="group-name">Accenture Group</h4>
+                                                                        <div class="group-name">
+                                                                                <h4>Accenture Group</h4>
+                                                                        </div>
                                                                 </div>
                                                                 <div class="website">
                                                                         <span class="title">Website:</span>
@@ -61,9 +62,7 @@
                                                 </div>
                                         </div>
 
-
                                         <div class="collapse-holder">
-                                                
                                                 <div class="collapse-bar" data-toggle="collapse" data-target="#collapse1">
                                                         <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
                                                         <span class="collapse-title">Entity</span>
@@ -114,10 +113,6 @@
                                                         <li>Startup</li>
                                                 </ul>
                                         </div>
-                                      
-                                        
-
-
                                 </div>
                         </div>
         
@@ -125,28 +120,28 @@
 
 
                         <div class="col-xs-9 col-xs-offset-3">
-                                <div class="primary-content">
-                                        <div class="search-box">
-                                                <div class="search-header">
-                                                        <h3>Entity - Contacts</h3>
-                                                </div>
+                                <div class="scroll-content">
+                                                <div class="search-box">
+                                                        <div class="search-header">
+                                                                <h3>Entity - Contacts</h3>
+                                                        </div>
 
-                                                <div class="search-filter">
-                                                        <span class="search-inputs">
-                                                                <input id="searchname" type="text" placeholder="Search by name">
-                                                        </span>
-                                                        <span class="search-inputs">
-                                                                <input id="searchrole" type="text" placeholder="Search by role">
-                                                        </span>
-                                                        <span class="search-inputs">
-                                                                <input id="searchmail" type="text" placeholder="Search by email">
-                                                        </span>
-                                                        <span class="search-buttons">
-                                                                <button type="button" class="btn search-clear">Clear Filters</button>
-                                                                <button type="button" class="btn btn-success search">Search</button>
-                                                        </span>
+                                                        <div class="search-filter">
+                                                                <span class="search-inputs">
+                                                                        <input id="searchname" type="text" placeholder="Search by name">
+                                                                </span>
+                                                                <span class="search-inputs">
+                                                                        <input id="searchrole" type="text" placeholder="Search by role">
+                                                                </span>
+                                                                <span class="search-inputs">
+                                                                        <input id="searchmail" type="text" placeholder="Search by email">
+                                                                </span>
+                                                                <span class="search-buttons">
+                                                                        <button type="button" class="btn search-clear">Clear Filters</button>
+                                                                        <button type="button" class="btn btn-success search">Search</button>
+                                                                </span>
+                                                        </div>
                                                 </div>
-                                        </div>
 
 
                                                 <div class="row">
@@ -160,6 +155,10 @@
                                                                 <li><a href="#" title="Search-F">F</a></li>
                                                                 <li><a href="#" title="Search-G">G</a></li>
                                                                 <li><a href="#" title="Search-H">H</a></li>
+                                                                <li><a href="#" title="Search-I">I</a></li>
+                                                                <li><a href="#" title="Search-J">J</a></li>
+                                                                <li><a href="#" title="Search-K">K</a></li>
+                                                                <li><a href="#" title="Search-L">L</a></li>
                                                         </ul>
                                                     </div>
 
@@ -178,7 +177,7 @@
                                                 </div>  
 
                                                 <div class="row">
-                                                    <div class="col-lg-12">
+                                                    <div class="col-xs-12">
                                                         <div class="vcard-header">
                                                             <h4>Last contacted</h4>
                                                         </div>
@@ -186,94 +185,91 @@
                                                 </div>
 
                                                 <div class="row">
+                                                        <div class="col-xs-3">
+                                                                <div class="contact-card">
+                                                                <span class="contact-image">
+                                                                        <i class="fa fa-user-circle"></i>
+                                                                </span>
 
-                                                    <div class="col-xs-3">
-                                                        <div class="contact-card">
-                                                            <span class="contact-image">
-                                                                <i class="fa fa-user-circle"></i>
-                                                            </span>
+                                                                <span class="info">
+                                                                        <span class="vcard-name">SURNAME Name</span>
+                                                                        <div class="vcard-designation">
+                                                                                <span>Senior project manager</span>
+                                                                        </div>
+                                                                </span>
 
-                                                            <span class="info">
-                                                                     <span class="vcard-name">SURNAME Name</span>
-                                                                     <div>Senior project manager</div>
-                                                            </span>
-
-                                                            <span class="contact-btns">
-                                                                <button type="button" class="btn btn-link contact-btns"><i class="fa fa-envelope" aria-hidden="true"></i></button>
-                                                                <button type="button" class="btn btn-link contact-btns"><i class="fa fa-envelope" aria-hidden="true"></i></button>
-                                                            </span>
+                                                                <span class="contact-btns">
+                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
+                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                </span>
+                                                                </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="col-xs-3">
-                                                        <div class="contact-card">
-                                                            <span class="contact-image">
-                                                                <i class="fa fa-user-circle"></i>
-                                                            </span>
+                                                        <div class="col-xs-3">
+                                                                <div class="contact-card">
+                                                                <span class="contact-image">
+                                                                        <i class="fa fa-user-circle"></i>
+                                                                </span>
 
-                                                            <span class="info">
-                                                                     <span class="vcard-name">SURNAME Name</span>
-                                                                     <div>Senior project manager</div>
-                                                            </span>
+                                                                <span class="info">
+                                                                        <span class="vcard-name">SURNAME Name</span>
+                                                                        <div class="vcard-designation">
+                                                                                <span>Senior project manager</span>
+                                                                        </div>
+                                                                </span>
 
-                                                            <span class="contact-btns">
-                                                                <button type="button" class="btn btn-link contact-btns"><i class="fa fa-envelope" aria-hidden="true"></i></button>
-                                                                <button type="button" class="btn btn-link contact-btns"><i class="fa fa-envelope" aria-hidden="true"></i></button>
-                                                            </span>
+                                                                <span class="contact-btns">
+                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
+                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                </span>
+                                                                </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="col-xs-3">
-                                                        <div class="contact-card">
-                                                            <span class="contact-image">
-                                                                <i class="fa fa-user-circle"></i>
-                                                            </span>
+                                                        <div class="col-xs-3">
+                                                                <div class="contact-card">
+                                                                <span class="contact-image">
+                                                                        <i class="fa fa-user-circle"></i>
+                                                                </span>
 
-                                                            <span class="info">
-                                                                     <span class="vcard-name">SURNAME Name</span>
-                                                                     <div>Senior project manager</div>
-                                                            </span>
+                                                                <span class="info">
+                                                                        <span class="vcard-name">SURNAME Name</span>
+                                                                        <div class="vcard-designation">
+                                                                                <span>Senior project manager</span>
+                                                                        </div>
+                                                                </span>
 
-                                                            <span class="contact-btns">
-                                                                <button type="button" class="btn btn-link contact-btns"><i class="fa fa-envelope" aria-hidden="true"></i></button>
-                                                                <button type="button" class="btn btn-link contact-btns"><i class="fa fa-envelope" aria-hidden="true"></i></button>
-                                                            </span>
+                                                                <span class="contact-btns">
+                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
+                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                </span>
+                                                                </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="col-xs-3">
-                                                        <div class="contact-card">
-                                                            <span class="contact-image">
-                                                                <i class="fa fa-user-circle"></i>
-                                                            </span>
+                                                        <div class="col-xs-3">
+                                                                <div class="contact-card">
+                                                                <span class="contact-image">
+                                                                        <i class="fa fa-user-circle"></i>
+                                                                </span>
 
-                                                            <span class="info">
-                                                                     <span class="vcard-name">SURNAME Name</span>
-                                                                     <div>Senior project manager</div>
-                                                            </span>
+                                                                <span class="info">
+                                                                        <span class="vcard-name">SURNAME Name</span>
+                                                                        <div class="vcard-designation">
+                                                                                <span>Senior project manager</span>
+                                                                        </div>
+                                                                </span>
 
-                                                            <span class="contact-btns">
-                                                                <button type="button" class="btn btn-link contact-btns"><i class="fa fa-envelope" aria-hidden="true"></i></button>
-                                                                <button type="button" class="btn btn-link contact-btns"><i class="fa fa-envelope" aria-hidden="true"></i></button>
-                                                            </span>
+                                                                <span class="contact-btns">
+                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
+                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                </span>
+                                                                </div>
                                                         </div>
-                                                    </div>
-
-                                                  
-                                                    
-
-                                                    
-
                                                 </div>  
 
                                 </div>
                         </div>
                 </div>
         </div>
-
-
-
-
 
 
 <script src="js/jquery.min.js"></script>
