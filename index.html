@@ -13,8 +13,6 @@
 <body>
 
 
-
-
         <div class="top-navbar">
                 <span>Amaris</span>
         </div>
@@ -35,237 +33,301 @@
                                                 <h4>Accenture</h4>
                                         </div>
                                         
-                                        <div class="row row-eq-height">
-                                                <div class="col-xs-5">
-                                                        <img class="company-img" src="images/company-logo.jpg" alt="Company-Logo">  
+                                        <div class="media">
+                                                <div class="media-left">
+                                                        <div class="company-logo">
+                                                                <img alt="company-logo" src="images/company-logo.jpg" class="media-object">
+                                                        </div> 
                                                 </div>
-                                                <div class="col-xs-7">
-                                                        <div class="company-descr">
-                                                                <div class="group">
-                                                                        <span class="title">Group Name:</span>
-                                                                        <div class="group-name">
-                                                                                <h4>Accenture Group</h4>
+                                                <div class="media-body media-middle">
+                                                        <div class="company-info">
+                                                                <div class="groupname">
+                                                                        <span class="info-title">Group name:</span>
+                                                                        <h5 class="group-name">Accenture Group</h5>
+                                                                </div>
+                                                                <div class="website-address">
+                                                                        <span class="info-title">Website:</span>
+                                                                        <div class="website-name">
+                                                                                <span><a href="https://www.accenture.com" title="Accenture">www.accenture.com</a></span>
                                                                         </div>
                                                                 </div>
-                                                                <div class="website">
-                                                                        <span class="title">Website:</span>
-                                                                        <div id="website-url">
-                                                                                <a href="http://www.accenture.com" title="Accenture">www.accenture.com</a>
-                                                                        </div>
-                                                                </div>
-                                                                <div class="analysis-buttons">
-                                                                        <span class="file-count"><i class="fa fa-file-o"></i></span>
+                                                                <div class="analysis-btns">
+                                                                        <button type="button" class="btn file-button"><i class="fa fa-file-o"></i></button>
                                                                         <span class="badge badge-notify">4</span>
-                                                                        <button type="button" class="btn btn-success analyse-btn">Analysis Request</button>
+                                                                        <button type="button" class="btn btn-success analyse-btn" data-toggle="modal" data-target="#myModal">Analysis Request</button>
                                                                 </div>
                                                         </div>
                                                 </div>
                                         </div>
 
                                         <div class="collapse-holder">
-                                                <div class="collapse-bar" data-toggle="collapse" data-target="#collapse1">
-                                                        <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
-                                                        <span class="collapse-title">Entity</span>
-                                                </div>
-                                                <ul id="collapse1" class="collapse collapse-links">
-                                                        <li>General Description</li>
-                                                        <li>People</li>
-                                                        <li>Presence</li>
-                                                        <li>Legal</li>
-                                                        <li>Startup</li>
-
-                                                </ul>
-
-                                                <div class="collapse-bar" data-toggle="collapse" data-target="#collapse2">
-                                                        <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
-                                                        <span class="collapse-title">Competitions</span>
-                                                </div>
-                                                <ul id="collapse2" class="collapse collapse-links">
-                                                        <li>General Description</li>
-                                                        <li>People</li>
-                                                        <li>Presence</li>
-                                                        <li>Legal</li>
-                                                        <li>Startup</li>
-                                                </ul>
-
-                                                <div class="collapse-bar" data-toggle="collapse" data-target="#collapse3">
-                                                        <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
-                                                        <span class="collapse-title">Acquisitions</span>
-                                                </div>
-                                                <ul id="collapse3" class="collapse collapse-links">
-                                                        <li>General Description</li>
-                                                        <li>People</li>
-                                                        <li>Presence</li>
-                                                        <li>Legal</li>
-                                                        <li>Startup</li>
-                                                </ul>
-
-
-                                                <div class="collapse-bar" data-toggle="collapse" data-target="#collapse4">
-                                                        <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
-                                                        <span class="collapse-title">Inspire</span>
-                                                </div>
-                                                <ul id="collapse4" class="collapse collapse-links">
-                                                        <li>General Description</li>
-                                                        <li>People</li>
-                                                        <li>Presence</li>
-                                                        <li>Legal</li>
-                                                        <li>Startup</li>
-                                                </ul>
+                                                <div class="panel-group" id="accordion">
+                                                        <div class="panel side-navigation">
+                                                                <div class="panel-heading nav-header open">
+                                                                        <span class="collapse-arrow">
+                                                                                <a title="arrow-down" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                                                        <i class="fa fa-angle-down"></i>
+                                                                                </a>
+                                                                        </span>
+                                                                        <span class="collapse-title">Entity</span>  
+                                                                </div>
+                                                                <div id="collapse1" class="panel-collapse collapse">
+                                                                        <div class="panel-body">
+                                                                                <ul class="collapse-links">
+                                                                                        <li>General Description</li>
+                                                                                        <li>People</li>
+                                                                                        <li>Presence</li>
+                                                                                        <li>Legal</li>
+                                                                                        <li>Startup</li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="panel side-navigation">
+                                                                <div class="panel-heading">
+                                                                        <span class="collapse-arrow">
+                                                                                <a title="arrow-down" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                                                        <i class="fa fa-angle-down"></i>
+                                                                                </a>
+                                                                        </span>
+                                                                        <span class="collapse-title">Competitions</span>  
+                                                                </div>
+                                                                <div id="collapse2" class="panel-collapse collapse">
+                                                                        <div class="panel-body">
+                                                                                <ul class="collapse-links">
+                                                                                        <li>General Description</li>
+                                                                                        <li>People</li>
+                                                                                        <li>Presence</li>
+                                                                                        <li>Legal</li>
+                                                                                        <li>Startup</li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="panel side-navigation">
+                                                                <div class="panel-heading">
+                                                                        <span class="collapse-arrow">
+                                                                                <a title="arrow-down" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                                                                        <i class="fa fa-angle-down"></i>
+                                                                                </a>
+                                                                        </span>
+                                                                        <span class="collapse-title">Aquisitions</span>  
+                                                                </div>
+                                                                <div id="collapse3" class="panel-collapse collapse">
+                                                                        <div class="panel-body">
+                                                                                <ul class="collapse-links">
+                                                                                        <li>Aquisitions-1</li>
+                                                                                        <li>People</li>
+                                                                                        <li>Presence</li>
+                                                                                        <li>Legal</li>
+                                                                                        <li>Startup</li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="panel side-navigation">
+                                                                <div class="panel-heading">
+                                                                        <span class="collapse-arrow">
+                                                                                <a title="arrow-down" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                                                                        <i class="fa fa-angle-down"></i>
+                                                                                </a>
+                                                                        </span>
+                                                                        <span class="collapse-title">Inspire</span>  
+                                                                </div>
+                                                                <div id="collapse4" class="panel-collapse collapse">
+                                                                        <div class="panel-body">
+                                                                                <ul class="collapse-links">
+                                                                                        <li>General Description</li>
+                                                                                        <li>People</li>
+                                                                                        <li>Presence</li>
+                                                                                        <li>Legal</li>
+                                                                                        <li>Startup</li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div> 
                                         </div>
                                 </div>
                         </div>
-        
-
+                        <div class="analyse-request">
+                                <div id="myModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                        <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                <h4 class="modal-title text-center">Analysis Request</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                             
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                </div>
+                                        
+                                        </div>
+                                </div>
+                        </div>
+                       
 
 
                         <div class="col-xs-9 col-xs-offset-3">
                                 <div class="scroll-content">
-                                                <div class="search-box">
-                                                        <div class="search-header">
-                                                                <h3>Entity - Contacts</h3>
-                                                        </div>
+                                        <div class="search-box">
 
-                                                        <div class="search-filter">
-                                                                <span class="search-inputs">
-                                                                        <input id="searchname" type="text" placeholder="Search by name">
-                                                                </span>
-                                                                <span class="search-inputs">
-                                                                        <input id="searchrole" type="text" placeholder="Search by role">
-                                                                </span>
-                                                                <span class="search-inputs">
-                                                                        <input id="searchmail" type="text" placeholder="Search by email">
-                                                                </span>
-                                                                <span class="search-buttons">
-                                                                        <button type="button" class="btn search-clear">Clear Filters</button>
-                                                                        <button type="button" class="btn btn-success search">Search</button>
-                                                                </span>
+                                                <div class="search-header">
+                                                        <h3>Entity - Contacts</h3>
+                                                </div>
+
+                                                <div class="search-filter">
+                                                        <form class="form-inline">
+                                                                <div class="input-group name-search">
+                                                                        <span class="input-group-btn">
+                                                                                <button class="btn btn-secondary search-icon" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                                        </span>
+                                                                        <input type="text" class="form-control search-icon" placeholder="Search by name" aria-label="Search by name">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                        <div class="role-search"><input type="text" class="form-control" id="search-role" placeholder="Search by role"></div>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                        <div class="email-search"><input type="text" class="form-control" id="search_email" placeholder="Search by email"></div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                        <div class="search-buttons">
+                                                                                <button type="button" class="btn btn-default search-clear">Clear filters</button>
+                                                                                <button type="button" class="btn btn-success search">Search</button>
+                                                                        </div>
+                                                                </div>
+                                                        </form>
+                                                </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                                <div class="col-xs-6">
+                                                <ul class="search-hyperlinks">
+                                                        <li><a href="#" title="Search-A">A</a></li>
+                                                        <li><a href="#" title="Search-B">B</a></li>
+                                                        <li><a href="#" title="Search-C">C</a></li>
+                                                        <li><a href="#" title="Search-D">D</a></li>
+                                                        <li><a href="#" title="Search-E">E</a></li>
+                                                        <li><a href="#" title="Search-F">F</a></li>
+                                                        <li><a href="#" title="Search-G">G</a></li>
+                                                        <li><a href="#" title="Search-H">H</a></li>
+                                                        <li><a href="#" title="Search-I">I</a></li>
+                                                        <li><a href="#" title="Search-J">J</a></li>
+                                                        <li><a href="#" title="Search-K">K</a></li>
+                                                        <li><a href="#" title="Search-L">L</a></li>
+                                                </ul>
+                                                </div>
+
+                                                <div class="col-xs-6">
+                                                <div class="counters">
+                                                        <div class="results">
+                                                        <span class="title">Total results:</span>
+                                                        <span id="total-results">87</span>
+                                                        </div>
+                                                        <div class="contacts">
+                                                        <span class="title">Total contacts:</span>
+                                                        <span id="total-contacts">200</span>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                        </div>  
+
+                                        <div class="row">
+                                                <div class="col-xs-12">
+                                                <div class="vcard-header">
+                                                        <h4>Last contacted</h4>
+                                                </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row">
+                                                <div class="col-xs-3">
+                                                        <div class="contact-card">
+                                                                <div class="media">
+                                                                        <div class="media-left media-middle">
+                                                                                <div class="user-thumb">
+                                                                                        <img alt="user-image" src="images/user.png" class="media-object user-image">
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                                <h5 class="vcard-name">SURNAME Name</h5>
+                                                                                <span class="vcard-designation">Senior project manager</span>
+                                                                                <div class="contact-btns">
+                                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
+                                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
                                                         </div>
                                                 </div>
 
 
-                                                <div class="row">
-                                                    <div class="col-xs-6">
-                                                        <ul class="search-hyperlinks">
-                                                                <li><a href="#" title="Search-A">A</a></li>
-                                                                <li><a href="#" title="Search-B">B</a></li>
-                                                                <li><a href="#" title="Search-C">C</a></li>
-                                                                <li><a href="#" title="Search-D">D</a></li>
-                                                                <li><a href="#" title="Search-E">E</a></li>
-                                                                <li><a href="#" title="Search-F">F</a></li>
-                                                                <li><a href="#" title="Search-G">G</a></li>
-                                                                <li><a href="#" title="Search-H">H</a></li>
-                                                                <li><a href="#" title="Search-I">I</a></li>
-                                                                <li><a href="#" title="Search-J">J</a></li>
-                                                                <li><a href="#" title="Search-K">K</a></li>
-                                                                <li><a href="#" title="Search-L">L</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="col-xs-6">
-                                                        <div class="counters">
-                                                            <div class="results">
-                                                                <span class="title">Total results:</span>
-                                                                <span id="total-results">87</span>
-                                                            </div>
-                                                            <div class="contacts">
-                                                                <span class="title">Total contacts:</span>
-                                                                <span id="total-contacts">200</span>
-                                                            </div>
+                                                <div class="col-xs-3">
+                                                        <div class="contact-card">
+                                                                <div class="media">
+                                                                        <div class="media-left media-middle">
+                                                                                <div class="user-thumb">
+                                                                                        <img alt="user-image" src="images/user.png" class="media-object user-image">
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                                <h5 class="vcard-name">SURNAME Name</h5>
+                                                                                <span class="vcard-designation">Senior project manager</span>
+                                                                                <div class="contact-btns">
+                                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
+                                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
                                                         </div>
-                                                    </div>
-                                                </div>  
-
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <div class="vcard-header">
-                                                            <h4>Last contacted</h4>
-                                                        </div>
-                                                    </div>
                                                 </div>
 
-                                                <div class="row">
-                                                        <div class="col-xs-3">
-                                                                <div class="contact-card">
-                                                                <span class="contact-image">
-                                                                        <i class="fa fa-user-circle"></i>
-                                                                </span>
-
-                                                                <span class="info">
-                                                                        <span class="vcard-name">SURNAME Name</span>
-                                                                        <div class="vcard-designation">
-                                                                                <span>Senior project manager</span>
+                                                <div class="col-xs-3">
+                                                        <div class="contact-card">
+                                                                <div class="media">
+                                                                        <div class="media-left media-middle">
+                                                                                <div class="user-thumb">
+                                                                                        <img alt="user-image" src="images/user.png" class="media-object user-image">
+                                                                                </div>
                                                                         </div>
-                                                                </span>
-
-                                                                <span class="contact-btns">
-                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
-                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
-                                                                </span>
+                                                                        <div class="media-body">
+                                                                                <h5 class="vcard-name">SURNAME Name</h5>
+                                                                                <span class="vcard-designation">Senior project manager</span>
+                                                                                <div class="contact-btns">
+                                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
+                                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                                </div>
+                                                                        </div>
                                                                 </div>
                                                         </div>
+                                                </div>
 
-                                                        <div class="col-xs-3">
-                                                                <div class="contact-card">
-                                                                <span class="contact-image">
-                                                                        <i class="fa fa-user-circle"></i>
-                                                                </span>
-
-                                                                <span class="info">
-                                                                        <span class="vcard-name">SURNAME Name</span>
-                                                                        <div class="vcard-designation">
-                                                                                <span>Senior project manager</span>
+                                                <div class="col-xs-3">
+                                                        <div class="contact-card">
+                                                                <div class="media">
+                                                                        <div class="media-left media-middle">
+                                                                                <div class="user-thumb">
+                                                                                        <img alt="user-image" src="images/user.png" class="media-object user-image">
+                                                                                </div>
                                                                         </div>
-                                                                </span>
-
-                                                                <span class="contact-btns">
-                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
-                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
-                                                                </span>
+                                                                        <div class="media-body">
+                                                                                <h5 class="vcard-name">SURNAME Name</h5>
+                                                                                <span class="vcard-designation">Senior project manager</span>
+                                                                                <div class="contact-btns">
+                                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
+                                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                                </div>
+                                                                        </div>
                                                                 </div>
                                                         </div>
-
-                                                        <div class="col-xs-3">
-                                                                <div class="contact-card">
-                                                                <span class="contact-image">
-                                                                        <i class="fa fa-user-circle"></i>
-                                                                </span>
-
-                                                                <span class="info">
-                                                                        <span class="vcard-name">SURNAME Name</span>
-                                                                        <div class="vcard-designation">
-                                                                                <span>Senior project manager</span>
-                                                                        </div>
-                                                                </span>
-
-                                                                <span class="contact-btns">
-                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
-                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
-                                                                </span>
-                                                                </div>
-                                                        </div>
-
-                                                        <div class="col-xs-3">
-                                                                <div class="contact-card">
-                                                                <span class="contact-image">
-                                                                        <i class="fa fa-user-circle"></i>
-                                                                </span>
-
-                                                                <span class="info">
-                                                                        <span class="vcard-name">SURNAME Name</span>
-                                                                        <div class="vcard-designation">
-                                                                                <span>Senior project manager</span>
-                                                                        </div>
-                                                                </span>
-
-                                                                <span class="contact-btns">
-                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
-                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
-                                                                </span>
-                                                                </div>
-                                                        </div>
-                                                </div>  
-
+                                                </div>
+                                        </div>  
                                 </div>
                         </div>
                 </div>

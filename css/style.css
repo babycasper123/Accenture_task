@@ -8,8 +8,11 @@ body{
     color: #4d4d4d;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
     background-color: #FFFFFF;
+}
+.scroll-content{
+    z-index: 0;
 }
 .left-nav{
     height: 90vh;
@@ -28,9 +31,19 @@ body{
     color: #333333;
     background-color: #FFFFFF;
     padding: 0px;
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
     font-size: 13px;
+    line-height: 0;
+}
+.file-button{
+    color: #FFFFFF;
+    background-color: #2877E3;
+    padding: 0px;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    line-height: 0;
 }
 .last-analys{
     color: #FFFFFF;
@@ -45,34 +58,6 @@ body{
     color: white;
     padding: 10px 0 0 0;
 }
-.company-descr{
-    color: white;
-}
-.title{
-    font-size: 13px;
-}
-.group-name h4{
-    margin: 0px;
-}
-.website{
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    margin-left: 15px;
-    width: 100%;
-}
-.website a{
-    color: white;
-}
-.company-img{
-    width: 100%;
-    min-height: 20vh;
-}
 .file-count{
     font-size: 15px;
     padding: 5px;
@@ -84,21 +69,17 @@ body{
 .badge-notify{
     background: #2877E3;
     position: relative;
-    left: -11px;
-    top: -18px;
-    font-size: 9px;
-}
-.analysis-buttons{
-    position: absolute;
-    bottom: 0;
-    padding:0 15px 0 0;
-    width: 90%;
+    left: -13px;
+    top: -11px;
+    font-size: 8px;
 }
 .analyse-btn{
     font-size: 10px;
     padding: 5px 3px 5px 3px;
     width: 65%;
     float: right;
+    width: 90px;
+    height: 25px;
 }
 .collapse-holder{
     background-color: white;
@@ -108,41 +89,34 @@ body{
     max-height: 50vh;
     overflow: auto;
 }
-.collapse-bar{
-    padding: 12px 0 12px 30px;
-    cursor: pointer;
-}
 .collapse-arrow{
     font-size: 20px;
     vertical-align: middle;
+}
+.collapse-arrow a{
+    text-decoration: none;
+    color: black;
 }
 .collapse-title{
     font-size: 18px;
     margin-left: 10px;
     vertical-align: middle;
 }
-.search{
-    margin-left: 10px;
-    padding: 2px 5px 2px 5px;
-    width: 10%;
-}
 .search-clear{
-    margin-left: 10px;
-    padding: 2px 5px 2px 5px;
-    width: 11%;
     background-color: transparent;
     border-color: #999999;
     color: #999999;
     font-weight: 600;
 }
-.collapse-bar.open{
+
+.panel-heading.open{
     background-color: #E6E6E6;
 }
 .collapse-links{
     list-style:none;
     font-size: 15px;
     line-height: 3;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .collapse li{
     cursor: pointer;
@@ -155,11 +129,6 @@ body{
     background-color: #45818E;
     padding: 30px 20px 30px 20px;
     border: 2px solid;
-}
-.search-inputs{
-    margin-right: 20px;
-    padding: 3px;
-    line-height: 2
 }
 .search-hyperlinks{
     padding: 0px;
@@ -182,23 +151,14 @@ body{
 }
 .contact-card{
     border:2px solid #999999;
-    padding: 8px 5px 6px 5px;
-}
-.contact-image{
-    font-size: 30px;
-    color: #9FC5F8;
-}
-.info{
-    font-size: 10px;
-    display: inline-block;
+    padding: 9px;
+    position: relative;
 }
 .contact-btns{
-    float: right;
-    font-size: 10px;
+    position: absolute;
+    top: 20%;
+    left: 75%;
     opacity: 0;
-    transition: opacity 0.40s ease-in-out;
-    -moz-transition: opacity 0.40s ease-in-out;
-    -webkit-transition: opacity 0.40s ease-in-out;
 }
 .mail-button,.phone-button{
     font-size: 11px;
@@ -228,13 +188,71 @@ color: white;
 .vcard-name{
     font-weight: 600;
     font-size: 12px;
+    margin: 0;
 }
 .vcard-designation{
     color: #999999;
+    font-size: 10px;
 }
 .contact-card:hover .contact-btns{
     opacity: 1.0;
     transition: opacity .40s ease-in-out;
     -moz-transition: opacity .40s ease-in-out;
     -webkit-transition: opacity .40s ease-in-out;
+}
+.company-info{
+    color: white;
+}
+.info-title{
+    font-size: 11px;
+}
+.group-name{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+}
+.website-name{
+    font-size: 13px;
+}
+.website-address{
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.search-icon{
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    height: 33.5px;
+    border: none;
+    outline:none;
+}
+.search-filter .input-group,
+.search-filter .form-group{
+    margin-right: 7px;
+}
+.user-thumb{
+    width: 28px;
+}
+.user-image{
+    max-width: 100%;
+}
+.panel-holder{
+    webkit-box-shadow: none;
+    box-shadow: none;
+}
+.nav-header,.side-navigation{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.search-buttons .search{
+    padding: 6px 20px 6px 20px;
+    margin-left: 6px;
+}
+.role-search,
+.email-search,
+.name-search {
+    border: 2px solid;
+}
+.search-icon{
+    box-shadow: none !important;
 }
