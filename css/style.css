@@ -55,7 +55,8 @@ body{
     display: block;
     text-align: right;
 }
-.company-name{
+.company-name,
+.info-title{
     color: white;
 }
 .file-count{
@@ -133,7 +134,7 @@ body{
 }
 .search-header{
     color: #999999;
-    margin: 80px 0 0 0;
+    margin: 80px 0 20px 0;
 }
 .search-filter{
     background-color: #45818E;
@@ -209,7 +210,7 @@ color: white;
     -moz-transition: opacity .40s ease-in-out;
     -webkit-transition: opacity .40s ease-in-out;
 }
-.company-info{
+.groupname,.website-address{
     color: white;
 }
 .info-title{
@@ -219,10 +220,13 @@ color: white;
     font-size: 13px;
     font-weight: 600;
     margin: 0;
+    color: white;
+    line-height: 1;
 }
 .website-name{
     font-size: 13px;
     display: block;
+    line-height: 1;
 }
 .website-address{
     line-height: 1;
@@ -265,4 +269,17 @@ color: white;
 }
 .search-icon{
     box-shadow: none !important;
+}
+.analysis-btns{
+    margin-top: 10px;
+}
+.results{
+    margin: 20px 0 0 0;
+    color: #999999;
+    text-align: right;
+}
+.contacts{
+    margin: 0px;
+    color: #999999;
+    text-align: right;
 }
