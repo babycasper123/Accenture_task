@@ -44,6 +44,7 @@ body{
     height: 22px;
     font-size: 14px;
     line-height: 0;
+    position: relative;
 }
 .last-analys{
     color: #FFFFFF;
@@ -56,7 +57,6 @@ body{
 }
 .company-name{
     color: white;
-    padding: 10px 0 0 0;
 }
 .file-count{
     font-size: 15px;
@@ -68,10 +68,13 @@ body{
 }
 .badge-notify{
     background: #2877E3;
-    position: relative;
-    left: -13px;
-    top: -11px;
-    font-size: 8px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    font-size: 10px;
+    padding: 3px;
+    border-radius: 2px;
+    line-height: 1;
 }
 .analyse-btn{
     font-size: 10px;
@@ -93,9 +96,11 @@ body{
     font-size: 20px;
     vertical-align: middle;
 }
-.collapse-arrow a{
-    text-decoration: none;
-    color: black;
+.collapse-arrow a,
+.expand-nav{
+    text-decoration: none !important;
+    color: black !important;
+    display: block;
 }
 .collapse-title{
     font-size: 18px;
@@ -109,14 +114,19 @@ body{
     font-weight: 600;
 }
 
+.side-navigation .panel-heading:hover{
+    background-color: #E6E6E6;
+}
+
 .panel-heading.open{
     background-color: #E6E6E6;
 }
 .collapse-links{
-    list-style:none;
+    list-style: none;
     font-size: 15px;
     line-height: 3;
     margin-left: 20px;
+    padding: 0 0 0 10px;
 }
 .collapse li{
     cursor: pointer;
@@ -188,7 +198,6 @@ color: white;
 .vcard-name{
     font-weight: 600;
     font-size: 12px;
-    margin: 0;
 }
 .vcard-designation{
     color: #999999;
@@ -213,6 +222,7 @@ color: white;
 }
 .website-name{
     font-size: 13px;
+    display: block;
 }
 .website-address{
     line-height: 1;
@@ -231,7 +241,7 @@ color: white;
     margin-right: 7px;
 }
 .user-thumb{
-    width: 28px;
+    width: 30px;
 }
 .user-image{
     max-width: 100%;
