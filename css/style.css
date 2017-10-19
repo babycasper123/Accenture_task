@@ -55,9 +55,13 @@ body{
     display: block;
     text-align: right;
 }
-.company-name,
 .info-title{
     color: white;
+}
+.company-name{
+    font-size: 25px;
+    color: white;
+    margin: 20px 0 20px 0;
 }
 .file-count{
     font-size: 15px;
