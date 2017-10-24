@@ -2,14 +2,16 @@
 // Left panel toggle scripts
 
 $('.expand-nav').click(function(){
-    $('.expand-nav').removeClass("open");
-    $(this).toggleClass('open');
+    $('.expand-nav').not(this).parent('.panel-heading').removeClass("open");
+    $(this).parent('.panel-heading').toggleClass('open');
     $('.expand-nav').not(this).find('i').removeClass("fa-angle-up open").addClass("fa-angle-down");
     $(this).find('i').toggleClass("fa-angle-down fa-angle-up");
 })
 
+
+//Contact-card toggle scripts
 $('.contact-card').click(function(){
-				$('#myModal').modal('show');
-				}).find('.contact-btns').click(function(e){
-					return false;
+    $('#contact-card-xl').modal('show');
+    }).find('.contact-btns').click(function(){
+        return false;
 });

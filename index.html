@@ -55,12 +55,12 @@
                                         <div class="collapse-holder">
                                                 <div class="panel-group" id="accordion">
                                                         <div class="panel side-navigation">
-                                                                <a title="arrow-down" class="expand-nav" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                                                        <div class="panel-heading nav-header open">
+                                                                <div class="panel-heading nav-header">
+                                                                        <a title="arrow-down" class="expand-nav" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                                                                                 <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
                                                                                 <span class="collapse-title">Entity</span>  
-                                                                        </div>
-                                                                </a>
+                                                                        </a>
+                                                                </div>
                                                                 
                                                                 <div id="collapse1" class="panel-collapse collapse">
                                                                         <div class="panel-body">
@@ -75,12 +75,13 @@
                                                                 </div>
                                                         </div>
                                                         <div class="panel side-navigation">
-                                                                <a title="arrow-down" class="expand-nav" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                                                        <div class="panel-heading">
-                                                                                        <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
-                                                                                        <span class="collapse-title">Competitions</span>
-                                                                        </div>
-                                                                 </a> 
+                                                                <div class="panel-heading">
+                                                                        <a title="arrow-down" class="expand-nav" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                                                <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
+                                                                                <span class="collapse-title">Competitions</span>
+                                                                        </a> 
+                                                                </div>
+                                                                 
                                                                 <div id="collapse2" class="panel-collapse collapse">
                                                                         <div class="panel-body">
                                                                                 <ul class="collapse-links">
@@ -94,12 +95,14 @@
                                                                 </div>
                                                         </div>
                                                         <div class="panel side-navigation">
-                                                                <a title="arrow-down" class="expand-nav" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                                                        <div class="panel-heading">
-                                                                                        <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
-                                                                                        <span class="collapse-title">Aquisitions</span>
-                                                                        </div>
-                                                                </a>
+                                                                
+                                                                <div class="panel-heading">
+                                                                        <a title="arrow-down" class="expand-nav" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                                                                <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
+                                                                                <span class="collapse-title">Aquisitions</span>
+                                                                        </a>
+                                                                </div>
+                                                                
                                                                 <div id="collapse3" class="panel-collapse collapse">
                                                                         <div class="panel-body">
                                                                                 <ul class="collapse-links">
@@ -113,12 +116,14 @@
                                                                 </div>
                                                         </div>
                                                         <div class="panel side-navigation">
-                                                                <a title="arrow-down" class="expand-nav" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                                                                        <div class="panel-heading">
+                                                                
+                                                                <div class="panel-heading">
+                                                                        <a title="arrow-down" class="expand-nav" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
                                                                                 <span class="collapse-arrow"><i class="fa fa-angle-down"></i></span>
                                                                                 <span class="collapse-title">Inspire</span>  
-                                                                        </div>
-                                                                </a>
+                                                                        </a>
+                                                                </div>
+                                                               
                                                                 <div id="collapse4" class="panel-collapse collapse">
                                                                         <div class="panel-body">
                                                                                 <ul class="collapse-links">
@@ -292,7 +297,6 @@
                                                                                 </div>
                                                                         </div>
                                                                         <div class="media-body">
-                                                                                
                                                                                 <h4 class="media-heading vcard-name">SURNAME Name</h4>
                                                                                 <span class="vcard-designation">Senior project manager</span>
                                                                                 <div class="contact-btns">
@@ -303,22 +307,44 @@
                                                                 </div>
                                                         </div>
                                                 </div>
-                                                <div id="myModal" class="modal fade" role="dialog">
+                                                <div id="contact-card-xl" class="modal fade" role="dialog">
                                                   <div class="modal-dialog">
-
-                                                    <!-- Modal content-->
                                                     <div class="modal-content">
-                                                      <div class="modal-header">
+                                                      <div class="modal-header contact-header-xl">
                                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <h4 class="modal-title">Modal Header</h4>
                                                       </div>
-                                                      <div class="modal-body">
-                                                        <p>Some text in the modal.</p>
+                                                      <div class="modal-body contact-holder">
+                                                        <div class="contact-card-xl">
+                                                                <div class="media">
+                                                                        <div class="media-left">
+                                                                                <div class="user-thumb-xl">
+                                                                                        <img alt="user-image" src="images/user.png" class="media-object user-image">
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                                <h4 class="media-heading">Mr.</h4>
+                                                                                <h4 class="vcard-name-xl">SURNAME Name</h4>
+                                                                                <h4 class="vcard-designation-xl">Project manager</h4>
+                                                                                <h4 class="vcard-location-xl">Amaris Vienna</h4>
+                                                                                <div class="contact-btns-xl">
+                                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
+                                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                                        <button type="button" class="btn btn-link contact-button"><i class="fa fa-clock-o"></i><span>Contact history</span></button>
+                                                                                </div>
+                                                                                <div class="extra-info">
+                                                                                        <h4>surname@gmail.com</h4>
+                                                                                        <h4>+34 0000000000000</h4>
+                                                                                        <h4>www.linkedin.com/surname</h4>
+                                                                                </div>
+                                                                                
+                                                                        </div>
+                                                                </div>
+                                                        </div>
                                                       </div>
-                                                      <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                      <div class="modal-footer comment-box">
+                                                        <h4 class="text-center first-comment">Be the first to write a comment</h4>
+                                                        <textarea class="add-comment" rows="1" id="comment" placeholder="Type a comment..."></textarea> 
                                                       </div>
-                                                    </div>
 
                                                   </div>
                                                 </div>
