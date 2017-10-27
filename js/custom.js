@@ -27,3 +27,29 @@ $('.toggle-contactRecord').click(function(){
     $('.media,.modal-footer,.add-comment').show();
     $('.contact-history').toggleClass('active');
 });
+
+// Dialer toggle scripts
+
+var callTimer;
+
+$('.call-now').click(function(){
+    $('.dialer,.comment-section,.cancel-call,.call-now').toggle();
+    var timeleft = 20;
+    callTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("dialer-timer").textContent = timeleft;
+    if(timeleft <= 0){
+        alert("Timed Out !");
+        $('.dialer,.comment-section,.cancel-call,.call-now').toggle();
+        document.getElementById("dialer-timer").textContent = "";
+        clearInterval(callTimer);
+    }
+    },1000);
+})
+
+$('.cancel-call,.skip-call').click(function(){
+    $('.dialer,.comment-section,.cancel-call,.call-now').toggle();
+    document.getElementById("dialer-timer").textContent = "";
+    clearInterval(callTimer);
+})
+

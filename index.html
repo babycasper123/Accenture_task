@@ -56,6 +56,7 @@
                                         </div>
 
                                         <!-- Side Nav STARTS -->
+
                                         <div class="collapse-holder">
                                                 <div class="panel-group" id="accordion">
                                                         <div class="panel side-navigation">
@@ -235,26 +236,8 @@
                                         </div>
 
                                         <div class="row">
-                                                <div class="col-xs-3">
-                                                        <div class="contact-card">
-                                                                <div class="media">
-                                                                        <div class="media-left media-middle">
-                                                                                <div class="user-thumb">
-                                                                                        <img alt="user-image" src="images/user.png" class="media-object user-image">
-                                                                                </div>
-                                                                        </div>
-                                                                        <div class="media-body">
-                                                                                <h4 class="media-heading vcard-name">SURNAME Name</h4>
-                                                                                <span class="vcard-designation">Senior project manager</span>
-                                                                                <div class="contact-btns">
-                                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
-                                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
-                                                                                </div>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>
 
+                                                <!-- Mini contact cards START -->
 
                                                 <div class="col-xs-3">
                                                         <div class="contact-card">
@@ -275,6 +258,7 @@
                                                                 </div>
                                                         </div>
                                                 </div>
+
 
                                                 <div class="col-xs-3">
                                                         <div class="contact-card">
@@ -315,6 +299,31 @@
                                                                 </div>
                                                         </div>
                                                 </div>
+
+                                                <div class="col-xs-3">
+                                                        <div class="contact-card">
+                                                                <div class="media">
+                                                                        <div class="media-left media-middle">
+                                                                                <div class="user-thumb">
+                                                                                        <img alt="user-image" src="images/user.png" class="media-object user-image">
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                                <h4 class="media-heading vcard-name">SURNAME Name</h4>
+                                                                                <span class="vcard-designation">Senior project manager</span>
+                                                                                <div class="contact-btns">
+                                                                                        <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
+                                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Mini contact cards END -->
+
+                                                <!-- Expanded contact card START -->
+
                                                 <div id="contact-card-xl" class="modal fade" role="dialog">
                                                         <div class="modal-dialog">
                                                                 <div class="modal-content">
@@ -339,7 +348,8 @@
                                                                                                 <h4 class="vcard-location-xl">Amaris Vienna</h4>
                                                                                                 <div class="contact-btns-xl">
                                                                                                         <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
-                                                                                                        <button type="button" class="btn btn-link phone-button"><i class="fa fa-phone"></i></button>
+                                                                                                        <button type="button" class="btn btn-link phone-button call-now"><i class="fa fa-phone"></i></button>
+                                                                                                        <button type="button" class="btn btn-link phone-button cancel-call"><i class="fa fa-times"></i></button>
                                                                                                         <button type="button" class="btn btn-link contact-button"><i class="fa fa-clock-o"></i><span>Contact history</span></button>
                                                                                                 </div>
                                                                                                 <div class="extra-info">
@@ -415,15 +425,33 @@
                                                                                                 </div>
                                                                                         </div>
                                                                                 </div>
+
                                                                                 <!-- Slide out contact history END -->
 
                                                                         </div>
 
+                                                                        <!-- Call dialer START -->
+
+                                                                        <div class="dialer">
+                                                                                <span class="dialer-thumb"><i class="fa fa-user-circle"></i></span>
+                                                                                <h4 class="dialer-name">SURNAME Name</h4>
+                                                                                <span id="dialer-timer" class="dialer-timer"></span>
+                                                                                <h4 class="feedback-header">Something to say about the call ?</h4>
+                                                                                <textarea class="call-feedback" name="call-feedback"></textarea>
+                                                                                <div class="dialer-buttons">
+                                                                                        <button type="button" class="btn btn-default skip-call">Skip</button>
+                                                                                        <button type="button" class="btn btn-success save-call">Save</button>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <!-- Call dialer END -->
+
                                                                         <!-- Comment section START -->
+
                                                                         <div class="modal-footer comment-section">
                                                                                 <div class="comment">
                                                                                         <div class="reply-img">
-                                                                                                <img src="images/user.png" class="reply-dp">
+                                                                                                <img alt="reply-thumb" src="images/user.png" class="reply-dp">
                                                                                         </div>
                                                                                         <div class="comment-outline left">
                                                                                                 <h4 class="reply-name">SURNAME Name</h4>
@@ -436,7 +464,7 @@
                                                                                 </div>
                                                                                 <div class="comment">
                                                                                         <div class="reply-img right">
-                                                                                                <img src="images/user.png" class="reply-dp">
+                                                                                                <img alt="reply-thumb" src="images/user.png" class="reply-dp">
                                                                                         </div>
                                                                                         <div class="comment-outline-left right">
                                                                                                 <h4 class="reply-name">SURNAME Name</h4>
@@ -444,47 +472,23 @@
                                                                                                         <h4>26/04/2017</h4>
                                                                                                         <h4>16:32</h4>
                                                                                                 </div>
-                                                                                                <p class="reply-text">
-                                                                                                        She literature discovered increasing how diminution understood. Though and highly the enough county for man.
-                                                                                                </p>
+                                                                                                <p class="reply-text">She literature discovered increasing how diminution understood. Though and highly the enough county for man.</p>
                                                                                         </div>
                                                                                 </div>
-                                                                                <!-- <div class="comment">
-                                                                                        <div class="reply-img">
-                                                                                                <img src="images/user.png" class="reply-dp">
-                                                                                        </div>
-                                                                                        <div class="comment-outline left">
-                                                                                                <h4 class="reply-name">SURNAME Name</h4>
-                                                                                                <div class="reply-timestamp">
-                                                                                                        <h4>26/04/2017</h4>
-                                                                                                        <h4>16:32</h4>
-                                                                                                </div>
-                                                                                                <p class="reply-text">Lorem ipsum polit dollar</p>
-                                                                                        </div>
-                                                                                </div>
-                                                                                <div class="comment">
-                                                                                        <div class="reply-img right">
-                                                                                                <img src="images/user.png" class="reply-dp">
-                                                                                        </div>
-                                                                                        <div class="comment-outline-left right">
-                                                                                                <h4 class="reply-name">SURNAME Name</h4>
-                                                                                                <div class="reply-timestamp">
-                                                                                                        <h4>26/04/2017</h4>
-                                                                                                        <h4>16:32</h4>
-                                                                                                </div>
-                                                                                                <p class="reply-text">Lorem ipsum polit dollar</p>
-                                                                                        </div>
-                                                                                </div> -->
                                                                         </div>
                                                                         <textarea class="add-comment" rows="1" id="comment" placeholder="Type a comment..."></textarea> 
+
                                                                         <!-- Comment section END -->
                                                                 </div>
                                                         </div>
                                                 </div>
+
+                                                <!-- Expanded contact card END -->
                                         </div>  
                                 </div>
                         </div>
                 </div>
+
                 <!-- Scroll content ENDS -->
         </div>
 
