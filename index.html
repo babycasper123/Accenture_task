@@ -348,8 +348,7 @@
                                                                                                 <h4 class="vcard-location-xl">Amaris Vienna</h4>
                                                                                                 <div class="contact-btns-xl">
                                                                                                         <button type="button" class="btn btn-link mail-button"><i class="fa fa-envelope"></i></button>
-                                                                                                        <button type="button" class="btn btn-link phone-button call-now"><i class="fa fa-phone"></i></button>
-                                                                                                        <button type="button" class="btn btn-link phone-button cancel-call"><i class="fa fa-times"></i></button>
+                                                                                                        <button type="button" id="call" class="btn btn-link phone-button call-now"><i class="fa fa-phone"></i></button>
                                                                                                         <button type="button" class="btn btn-link contact-button"><i class="fa fa-clock-o"></i><span>Contact history</span></button>
                                                                                                 </div>
                                                                                                 <div class="extra-info">
@@ -430,12 +429,14 @@
 
                                                                         </div>
 
+                                                                        <!-- Comment section START -->
+                                                                        
                                                                         <!-- Call dialer START -->
 
                                                                         <div class="dialer">
                                                                                 <span class="dialer-thumb"><i class="fa fa-user-circle"></i></span>
                                                                                 <h4 class="dialer-name">SURNAME Name</h4>
-                                                                                <span id="dialer-timer" class="dialer-timer"></span>
+                                                                                <span id="dialer-timer">20</span>
                                                                                 <h4 class="feedback-header">Something to say about the call ?</h4>
                                                                                 <textarea class="call-feedback" name="call-feedback"></textarea>
                                                                                 <div class="dialer-buttons">
@@ -445,8 +446,6 @@
                                                                         </div>
 
                                                                         <!-- Call dialer END -->
-
-                                                                        <!-- Comment section START -->
 
                                                                         <div class="modal-footer comment-section">
                                                                                 <div class="comment">
@@ -476,8 +475,7 @@
                                                                                         </div>
                                                                                 </div>
                                                                         </div>
-                                                                        <textarea class="add-comment" rows="1" id="comment" placeholder="Type a comment..."></textarea> 
-
+                                                                        <input type="text" class="form-control add-comment" id="usr" placeholder="Type a comment...">
                                                                         <!-- Comment section END -->
                                                                 </div>
                                                         </div>

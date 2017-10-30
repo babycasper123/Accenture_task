@@ -15,8 +15,55 @@ $('.contact-card').click(function(){
         return false;
 });
 
+
+
+// Dialer toggle scripts
+
+var startTimer;
+var totaltime = 20;
+
+$('#call').click(function(){
+    if ( $(this).hasClass('call-now') ) {
+        $(this).toggleClass('call-now cancel-call');
+        $(this).find('i').toggleClass("fa-phone fa-times");
+        $('.dialer').toggle();
+        var timeleft = totaltime;
+        startTimer = setInterval(function(){
+        timeleft--;
+        $('#dialer-timer').text(timeleft);
+        if(timeleft <= 0){
+            alert("Your call has timed out !");
+            $('.dialer').toggle();
+            $('#call').toggleClass('call-now cancel-call');
+            $('#call').find('i').toggleClass("fa-phone fa-times");
+            $('#dialer-timer').text(totaltime);
+            clearInterval(startTimer);
+        }
+        },1000);
+     }
+     else{
+        $('#call').toggleClass('call-now cancel-call');
+        $('#call').find('i').toggleClass("fa-phone fa-times");
+        $('.dialer').toggle();
+        clearInterval(startTimer);
+        $('#dialer-timer').text(totaltime);
+     }
+})
+
+$('.skip-call').click(function(){
+    $('#call').toggleClass('call-now cancel-call');
+    $('#call').find('i').toggleClass("fa-phone fa-times");
+    $('.dialer').toggle();
+    clearInterval(startTimer);
+    $('#dialer-timer').text(totaltime);
+})
+
 // Contact history toggle scripts
 $('.contact-button').click(function(){
+    $('.dialer').hide();
+    $('#call').removeClass('cancel-call').addClass('call-now');
+    $('#call').find('i').removeClass("fa-times").addClass('fa-phone');
+    clearInterval(startTimer);
     $(this).parents('.modal-content').find('.media,.modal-footer,.add-comment').hide();
     $(this).parents('.modal-content').find('.contact-history').toggleClass('active');
     $('.toggle-contactRecord').show();
@@ -27,29 +74,3 @@ $('.toggle-contactRecord').click(function(){
     $('.media,.modal-footer,.add-comment').show();
     $('.contact-history').toggleClass('active');
 });
-
-// Dialer toggle scripts
-
-var callTimer;
-
-$('.call-now').click(function(){
-    $('.dialer,.comment-section,.cancel-call,.call-now').toggle();
-    var timeleft = 20;
-    callTimer = setInterval(function(){
-    timeleft--;
-    document.getElementById("dialer-timer").textContent = timeleft;
-    if(timeleft <= 0){
-        alert("Timed Out !");
-        $('.dialer,.comment-section,.cancel-call,.call-now').toggle();
-        document.getElementById("dialer-timer").textContent = "";
-        clearInterval(callTimer);
-    }
-    },1000);
-})
-
-$('.cancel-call,.skip-call').click(function(){
-    $('.dialer,.comment-section,.cancel-call,.call-now').toggle();
-    document.getElementById("dialer-timer").textContent = "";
-    clearInterval(callTimer);
-})
-
