@@ -535,6 +535,8 @@ color: white;
 .record-desc{
     font-size: 11px;
     text-align: justify;
+    line-height: 1;
+    margin: 10px 0 10px 0;
 }
 .record-icon{
     font-size: 21px;
@@ -563,10 +565,22 @@ color: white;
     font-size: 14px;
     vertical-align: middle;
 }
-.record-date,
-.record-time{
+.record-thumb{
+    width: 18px;
+}
+.record-thumb-container{
+    margin: 18px 10px 10px 18px;
+}
+.record-thumb-name{
+    font-size: 13px;
+    margin: 0;
+}
+.record-timestamp{
+    text-align: right;
+    margin: 10px 0 0 0;
+}
+.record-timestamp > span{
     font-size: 10px;
-    text-align: right;;
 }
 .contact-record{
     padding: 0 8px 0 8px;
@@ -625,9 +639,7 @@ color: white;
     margin: 0;
     font-size: 12px;
 }
-.dialer{
-    display: none;
-}
 #contact-card-xl .modal-content{
     overflow: hidden;
 }
+

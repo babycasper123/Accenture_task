@@ -26,14 +26,14 @@ $('#call').click(function(){
     if ( $(this).hasClass('call-now') ) {
         $(this).toggleClass('call-now cancel-call');
         $(this).find('i').toggleClass("fa-phone fa-times");
-        $('.dialer').toggle();
+        $('.dialer').toggleClass('hidden');
         var timeleft = totaltime;
         startTimer = setInterval(function(){
         timeleft--;
         $('#dialer-timer').text(timeleft);
         if(timeleft <= 0){
             alert("Your call has timed out !");
-            $('.dialer').toggle();
+            $('.dialer').toggleClass('hidden');
             $('#call').toggleClass('call-now cancel-call');
             $('#call').find('i').toggleClass("fa-phone fa-times");
             $('#dialer-timer').text(totaltime);
@@ -44,7 +44,7 @@ $('#call').click(function(){
      else{
         $('#call').toggleClass('call-now cancel-call');
         $('#call').find('i').toggleClass("fa-phone fa-times");
-        $('.dialer').toggle();
+        $('.dialer').toggleClass('hidden');
         clearInterval(startTimer);
         $('#dialer-timer').text(totaltime);
      }
@@ -53,24 +53,24 @@ $('#call').click(function(){
 $('.skip-call').click(function(){
     $('#call').toggleClass('call-now cancel-call');
     $('#call').find('i').toggleClass("fa-phone fa-times");
-    $('.dialer').toggle();
+    $('.dialer').toggleClass('hidden');
     clearInterval(startTimer);
     $('#dialer-timer').text(totaltime);
 })
 
 // Contact history toggle scripts
 $('.contact-button').click(function(){
-    $('.dialer').hide();
+    $('.dialer').removeClass('hidden').addClass('hidden');
     $('#call').removeClass('cancel-call').addClass('call-now');
     $('#call').find('i').removeClass("fa-times").addClass('fa-phone');
     clearInterval(startTimer);
-    $(this).parents('.modal-content').find('.media,.modal-footer,.add-comment').hide();
+    $(this).parents('.modal-content').find('.userinfo-xl,.modal-footer,.add-comment').hide();
     $(this).parents('.modal-content').find('.contact-history').toggleClass('active');
     $('.toggle-contactRecord').show();
 });
 
 $('.toggle-contactRecord').click(function(){
     $(this).hide();
-    $('.media,.modal-footer,.add-comment').show();
+    $('.userinfo-xl,.modal-footer,.add-comment').show();
     $('.contact-history').toggleClass('active');
 });
