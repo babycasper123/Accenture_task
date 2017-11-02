@@ -227,8 +227,6 @@ color: white;
 }
 .vcard-name-xl{
     font-weight: 600;
-    font-size: 17px;
-    margin: 0;
 }
 .vcard-designation{
     color: #999999;
@@ -237,6 +235,7 @@ color: white;
 .vcard-designation-xl{
     font-size: 13px;
     margin: 0;
+    display: block;
 }
 .contact-card:hover .contact-btns{
     opacity: 1.0;
@@ -278,10 +277,10 @@ color: white;
 .search-filter .form-group{
     margin-right: 7px;
 }
-.user-thumb{
+.user-thumb img{
     width: 30px;
 }
-.user-thumb-xl{
+.user-thumb-xl img{
     width: 160px;
 }
 .user-image{
@@ -323,15 +322,19 @@ color: white;
     color: #999999;
     text-align: right;
 }
-.extra-info > h4{
+.extra-info span{
     font-size: 13px;
+    display: block;
+}
+.extra-info span:first-child{
+    margin-top: 27px;
 }
 .contact-header-xl{
     padding: 10px;
     border:none;
 }
 .contact-button{
-    font-size: 11px;
+    font-size: 14px;
     margin: 5px 0 0 0;
     display: inline-block;
     border: 2px solid #999999;
@@ -344,10 +347,7 @@ color: white;
     color: white;
 }
 .contact-button > .fa-clock-o{
-    font-size: 17px;
     margin-right: 3px;
-    padding-top: 2px;
-    border-radius: 2px;
 }
 .contact-button span{
     font-size: 12px;
@@ -553,23 +553,17 @@ color: white;
 .record-icon.mail{
     color: #2980b9;
 }
-.record-thumb{
-    font-size: 21px;
-    line-height: 3;
-    color: #2980b9;
-    vertical-align: middle;
-}
 .thumb-name{
     margin: 0;
     display: inline;
     font-size: 14px;
     vertical-align: middle;
 }
-.record-thumb{
+.record-thumb img{
     width: 18px;
 }
 .record-thumb-container{
-    margin: 18px 10px 10px 18px;
+    padding: 18px 10px 10px 18px;
 }
 .record-thumb-name{
     font-size: 13px;
@@ -642,4 +636,23 @@ color: white;
 #contact-card-xl .modal-content{
     overflow: hidden;
 }
-
+.edit-comp-dropzone{
+    height: 210px;
+    border-style: dashed;
+    text-align: center;
+}
+.dz-message{
+    border-radius: 2px solid red;
+}
+.dropzone-upload{
+    font-size: 50px;
+    color: #a6a6a6;
+}
+.dropzone-text{
+    font-size: 15px;
+    color: #a6a6a6;
+    display: block;
+}
+.dz-message .btn-primary{
+    margin: 10px 0 0 0;
+}
