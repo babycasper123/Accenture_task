@@ -74,3 +74,10 @@ $('.toggle-contactRecord').click(function(){
     $('.userinfo-xl,.modal-footer,.add-comment').show();
     $('.contact-history').toggleClass('active');
 });
+
+// Slick Slider scripts
+$('.slick-slides').slick({
+        dots: true,
+        slidesPerRow: 4, 
+        rows: 3,
+});

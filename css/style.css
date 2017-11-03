@@ -656,3 +656,106 @@ color: white;
 .dz-message .btn-primary{
     margin: 10px 0 0 0;
 }
+
+/* Index2 styles start */
+
+.office-card{
+    border: 2.5px solid #a6a6a6;
+    padding: 10px 5px 20px 40px;
+    margin: 50px 0 0 0;
+    position: relative;
+}
+.office-card.fav{
+    background-color: #45818E;
+    color: white;
+}
+
+.office-card.fav .offc-extr-info{
+    color: white;
+}
+
+.offc-location{
+    border: 2.5px solid #a6a6a6;
+    margin: 50px 0 0 0;
+    min-height: 131px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 7;
+}
+.office-address{
+    font-size: 14px;
+}
+.offc-extr-info{
+    display: block;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #808080;
+}
+.slick-slides{
+    margin: 30px;
+}
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    position: absolute;
+    bottom: 20px;
+    color: #333333;
+    border: 0;
+    background: none;
+    z-index: 1;
+}
+.slick-prev {
+    left: -33px;
+}
+.slick-prev:after {
+	content: "\f104";
+    font: 40px/1 'FontAwesome';
+}
+.slick-next {
+    right: 0px;
+    text-align: right;
+}
+.slick-next:after {
+	content: "\f105";
+    font: 40px/1 'FontAwesome';
+}
+.slick-dots li button::before{
+    content: "\f111";
+    font: 10px/1 'FontAwesome';
+}
+.slick-dots{
+    bottom: -45px;
+}
+.slick-prev:hover:after,
+.slick-next:hover:after {
+    color: #7e7e7e;
+}
+
+.fav-address{
+    position: absolute;
+    left: 5%;
+    top: 14%;
+    color: #FE9800;
+}
+
+.offc-map{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 17px;
+    padding: 0px;
+    opacity: 0;
+}
+.offc-map i{
+    border: 2px solid #2980b9;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.office-card:hover .offc-map{
+    opacity: 1;
+    transition: opacity .40s ease-in-out;
+    -moz-transition: opacity .40s ease-in-out;
+    -webkit-transition: opacity .40s ease-in-out;
+}
+
